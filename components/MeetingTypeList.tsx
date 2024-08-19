@@ -25,7 +25,7 @@ const MeetingTypeList = () => {
         if (!client || !user) return;
 
         try {
-            if(!values.dateTime) {
+            if (!values.dateTime) {
                 toast({ title: "Please select a date and time" })
                 return;
             }

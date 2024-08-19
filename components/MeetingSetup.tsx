@@ -4,17 +4,17 @@ import { DeviceSettings, useCall, VideoPreview } from '@stream-io/video-react-sd
 import React, { useEffect, useState } from 'react'
 import { Button } from './ui/button'
 
-const MeetingSetup = ({ setIsSetupComplete }: { setIsSetupComplete: (value: boolean) => void}) => {
+const MeetingSetup = ({ setIsSetupComplete }: { setIsSetupComplete: (value: boolean) => void }) => {
   const [isMicCamToggledOn, setIsMicCamToggledOn] = useState(false)
 
   const call = useCall();
 
-  if(!call) {
+  if (!call) {
     throw new Error('useCall must be used within StreamCall component')
   }
 
-  useEffect(()=> {
-    if(isMicCamToggledOn) {
+  useEffect(() => {
+    if (isMicCamToggledOn) {
       call?.camera.disable();
       call?.microphone.disable();
     } else {
@@ -29,7 +29,7 @@ const MeetingSetup = ({ setIsSetupComplete }: { setIsSetupComplete: (value: bool
       <VideoPreview />
       <div className='flex h-16 items-center justify-center gap-3'>
         <label className='flex items-center justify-center gap-2 font-medium'>
-          <input 
+          <input
             type="checkbox"
             checked={isMicCamToggledOn}
             onChange={(e) => setIsMicCamToggledOn(e.target.checked)}
