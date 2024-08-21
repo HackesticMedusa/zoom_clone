@@ -49,19 +49,19 @@ These features make the Yoom project a comprehensive and versatile web applicati
 ## Screenshots
 
 ### Home
-![Home](./home.png)
+![Home](./public/screenshots/home.png)
 
-### Upcoming Meeting
-![Upcoming Meeting](./upcoming.png)
+### Upcoming Meetings
+![Upcoming Meetings](./public/screenshots/upcoming.png)
 
 ### Previous Meetings
-![Previous Meetings](./previous.png)
+![Previous Meetings](./public/screenshots/previous.png)
 
 ### Recordings
-![Recordings](./recordings.png)
+![Recordings](./public/screenshots/recordings.png)
 
 ### Personal Room
-![Personal Room](./personal-room.png)
+![Personal Room](./public/screenshots/personal-room.png)
 
 ## Prerequisites
 
