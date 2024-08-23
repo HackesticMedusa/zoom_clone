@@ -37,7 +37,13 @@ export default function RootLayout({
             colorBackground: '#1c1f2e',
             colorInputBackground: '#252a41',
             colorInputText: '#fff'
-          }
+          },
+          elements: {
+            badge: "text-white",
+            navbarButton: "text-white",
+            active: "text-primary",
+            menuButton: "text-white",
+          },
         }}
       >
         <body className={`${inter.className} bg-dark-2`}>
